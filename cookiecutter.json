@@ -1,0 +1,12 @@
+{
+    "ctf_name": "myctf",
+    "challenge_name": "untitled",
+    "challenge_slug": "{{ cookiecutter.challenge_name | lower | replace(' ',  '_' ) | replace('-', '_') }}",
+    "port": "4000",
+    "flag": "flag{l33t}",
+    "points": 100,
+    "author": "anonymous",
+    "category": "pwn",
+    "description": "Simple CTF challenge",
+    "docker_image": "{{cookiecutter.ctf_name}}/{{cookiecutter.challenge_name}}"
+}
